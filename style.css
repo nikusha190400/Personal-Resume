@@ -184,6 +184,7 @@ body {
 h2 {
     font-size: 20px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 p {
     font-size: 14px;
@@ -193,8 +194,19 @@ p {
 }
 .ka-p {
     text-align: right;
+    font-size: 12px;
 }
-
+.en-p {
+    font-size: 12px;
+}
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
 /* biography */
 .biography {
     margin-top: 100px;
@@ -209,12 +221,19 @@ p {
     width: 35%;
 }
 /* timeline START */
-.timeline {
+.education {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     margin-top: 6%;
+    row-gap: 50px;
+}
+.educ {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 .main-time {
     display: flex;
@@ -232,11 +251,12 @@ p {
     flex-direction: column;
     gap: 15px;
     width: 35%;
-    height: 150px;
+    height: 110px;
     background-color: rgba(255, 228, 196, 0);
     border-radius: 15px;
     padding: 20px 30px;
     box-sizing: border-box;
+    justify-content: center;
 
 }
 .time-l:nth-child(odd) {
