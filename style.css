@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+    font-family: myFont;
+    src: url(fonts/NotoSerifGeorgian-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: League Spartan;
+    src: url(fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+.en-font {
+    font-family: "League Spartan";
+    color: #3C3441;
+}
+.ge-font {
+    font-family: "myFont";
+    color: #FAE0DF;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,#3C3441 50%, #FAE0DF 50%);
+}
+.personal {
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    box-sizing: border-box;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.info h1, h3 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 220px;
+    line-height: 130%;
+}
+.info h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+.ge {
+    text-align: right;
+}
+.en {
+    color: #3C3441;
+    text-align: left;
+}
+.geo .ge {
+    color: #FAE0DF;
+}
+.eng .en {
+    color: #3C3441;
+}
+.geo, .eng {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    column-gap: 0px;
+    row-gap: 10px;
+    align-items: center;
+}
+.contact a {
+    display: flex;
+    font-family: "myFont";
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    height: 30px;
+    background-color: #f4d2d1af;
+    justify-content: right;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.contact span {
+    background-color: #FAE0DF;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+}
+.contact span img {
+    width: 15px;
+}
+.personal img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius:50%;
+}
+.img::before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px dashed;
+    border-top-color: #3C3441;
+    border-right-color: #3C3441;
+    border-bottom-color: #FAE0DF;
+    border-left-color: #FAE0DF;
+    rotate: 45deg;
+}
+.img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border-right: 5px  #3C3441;
+    border-left: 5px  #FAE0DF;
+    border-style: none solid none solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* TEXTS */
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 130%;
+}
+.ka-p {
+    text-align: right;
+}
+
+/* biography */
+.biography {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.autobio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 35%;
+}
+/* timeline START */
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6%;
+}
+.main-time {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    width: 100%;
+    gap: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.time-l {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+    height: 150px;
+    background-color: rgba(255, 228, 196, 0);
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+}
+.time-l:nth-child(odd) {
+    border-color: #FAE0DF;
+    color: #FAE0DF;
+    border-right: 2px solid;
+    text-align: right !important;
+}
+.time-l:nth-child(even) {
+    border-color: #3C3441;
+    color: #3C3441;
+    border-left: 2px solid;
+}
