@@ -1,4 +1,4 @@
-const skills = document.querySelectorAll('.skill-1')
+const skills = document.querySelectorAll('.hidden')
 window.addEventListener('scroll', checkBoxes)
 checkBoxes()
 
