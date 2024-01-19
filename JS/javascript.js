@@ -12,4 +12,4 @@ function checkBoxes(){
             box.classList.remove('show')
         }
     })
-}
+} 
